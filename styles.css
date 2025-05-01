@@ -206,26 +206,61 @@ body {
     text-decoration: underline;
 }
 
-/* --- Contact Section --- */
+/* --- Skills Section --- */
+/* Style the skills list for better readability */
+.skills-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+    column-count: 2; /* Display skills in two columns on wider screens */
+    column-gap: 40px; /* Space between columns */
+    margin: 0 auto; /* Center the list block */
+    max-width: 600px; /* Limit width for better centering */
+    text-align: left; /* Align text within the list to the left */
+}
+
+.skills-list li {
+    margin-bottom: 0.8em; /* Space between skill items */
+    font-size: 1rem;
+     /* You could add icons here using ::before pseudo-elements if desired */
+}
+
+/* --- Experience Section --- */
+/* Ensure paragraph in experience section respects line breaks */
+#experience p {
+    line-height: 1.9; /* Slightly more spacing for multi-line items */
+    text-align: center; /* Or text-align: left; if preferred */
+    max-width: 650px; /* Limit width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Contact Section (Updated) --- */
 #contact {
     text-align: center;
     background-color: #f4f7fc; /* Light blueish background */
 }
 
-.contact-button {
-    display: inline-block;
-    background-color: var(--accent-color-primary);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
+/* Style the new contact links list */
+.contact-links-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem; /* Add some space above the links */
 }
 
-.contact-button:hover {
-    background-color: #5a52e0; /* Darker purple */
+.contact-links-list li {
+    margin-bottom: 1em; /* Space between contact links */
+    font-size: 1.1rem; /* Make contact links slightly larger */
+}
+
+.contact-links-list a {
+    color: var(--heading-color); /* Use heading color for prominence */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links-list a:hover {
+    color: var(--accent-color-primary); /* Use accent color on hover */
+    text-decoration: underline;
 }
 
 
@@ -259,5 +294,21 @@ body {
      }
     .header-container {
         /* Adjust header layout if needed for mobile */
+        /* Example: flex-wrap: wrap; justify-content: center; gap: 15px; */
     }
-}
+
+    /* --- Skills Section (Responsive) --- */
+    .skills-list {
+        column-count: 1; /* Stack skills in one column on smaller screens */
+    }
+
+    /* --- Experience Section (Responsive) --- */
+    #experience p {
+         text-align: center; /* Keep centered or change to left */
+    }
+
+    /* --- Contact Section (Responsive) --- */
+    .contact-links-list li {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+} /* End of @media query */
