@@ -1,68 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OMNIX Creator – Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>Prabu M S – AI & Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts (Example: Playfair Display for Serif, Inter for Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm the Creator of OMNIX</h1>
-    <p>AI & Full Stack Developer | Cybersecurity Innovator | Cloud Enthusiast</p>
-  </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate and multidisciplinary developer building AI systems like OMNIX,
-      smart learning platforms like SkillSync, and cybersecurity tools like OX CyberShield.
-      With hands-on skills in Full Stack Development, Machine Learning, and Cloud Computing,
-      I aim to turn futuristic ideas into real-world solutions.
-    </p>
-  </section>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-nav">
+                <!-- Placeholder for Logo -->
+                <div class="logo-placeholder">[LOGO]</div>
+                <nav class="menu">MENU</nav> <!-- You might want to link this to sections later -->
+            </div>
+            <div class="hire-me">
+                <!-- Placeholder for Icon -->
+                <div class="icon-placeholder">[ICON]</div>
+                <span>HIRE ME</span> <!-- Or link this to the contact section -->
+            </div>
+        </div>
+    </header>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, C, Java, JavaScript, SQL</li>
-      <li>Web: React, HTML, CSS, Tailwind CSS, Framer Motion</li>
-      <li>AI/ML/DL: YOLOv8, Whisper, Transformers, Generative AI</li>
-      <li>Tools: Docker, FastAPI, Streamlit, Git, Grafana</li>
-      <li>Cybersecurity: Attack detection, alerting, honeypots</li>
-    </ul>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>
+                        <!-- Updated H1 -->
+                        Hi, I'm<br>
+                        <span class="name">Prabu M S</span>
+                    </h1>
+                    <p class="subtitle">
+                        <!-- Updated Subtitle -->
+                        <span class="highlight">AI & Full Stack Developer</span> | Cybersecurity Innovator | Cloud Enthusiast. Based in [Your Location - UPDATE THIS].
+                    </p>
+                </div>
+                <div class="hero-illustration">
+                    <!-- Placeholder for the large illustration -->
+                    <div class="illustration-placeholder">
+                        Illustration Placeholder
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>OMNIX:</strong> Voice + Vision AI assistant inspired by J.A.R.V.I.S.</li>
-      <li><strong>SkillSync:</strong> Full-stack collaborative learning & certification platform</li>
-      <li><strong>OX CyberShield:</strong> AI-powered cybersecurity tool with real-time dashboard</li>
-      <li><strong>FocusFlow:</strong> AI study planner using YouTube API + LLM</li>
-      <li><strong>Vehicle Speed Detection:</strong> YOLOv8 + Object Tracking</li>
-      <li><strong>MQTT + Grafana:</strong> IoT data visualization pipeline</li>
-    </ul>
-  </section>
+        <section id="about" class="content-section">
+             <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    <!-- Updated About Me content -->
+                    I'm a passionate and multidisciplinary developer building AI systems like OMNIX,
+                    smart learning platforms like SkillSync, and cybersecurity tools like OX CyberShield.
+                    With hands-on skills in Full Stack Development, Machine Learning, and Cloud Computing,
+                    I aim to turn futuristic ideas into real-world solutions.
+                </p>
+             </div>
+        </section>
 
-  <section class="experience">
-    <h2>Experience</h2>
-    <p>
-      Internship at Svasti – Worked on multiple AI/ML and cybersecurity projects<br>
-      NCC ‘C’ Certificate – Leadership, teamwork, and discipline<br>
-      Symposium Coordinator – Led the first-ever AI & DS symposium in our college
-    </p>
-  </section>
+        <!-- Added Skills Section -->
+        <section id="skills" class="content-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <!-- Using a list for skills, better for styling -->
+                <ul class="skills-list">
+                    <li>Languages: Python, C, Java, JavaScript, SQL</li>
+                    <li>Web: React, HTML, CSS, Tailwind CSS, Framer Motion</li>
+                    <li>AI/ML/DL: YOLOv8, Whisper, Transformers, Generative AI</li>
+                    <li>Tools: Docker, FastAPI, Streamlit, Git, Grafana</li>
+                    <li>Cybersecurity: Attack detection, alerting, honeypots</li>
+                </ul>
+                <!-- You might want specific CSS for .skills-list -->
+            </div>
+        </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-  </section>
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <!-- Populated Project Cards -->
+                    <article class="project-card">
+                        <h3>OMNIX</h3>
+                        <p>Voice + Vision AI assistant inspired by J.A.R.V.I.S.</p>
+                        <a href="#">View Code</a> <!-- UPDATE LINK -->
+                        <!-- <a href="#">Live Demo</a> -->
+                    </article>
+                     <article class="project-card">
+                        <h3>SkillSync</h3>
+                        <p>Full-stack collaborative learning & certification platform.</p>
+                        <a href="#">View Code</a> <!-- UPDATE LINK -->
+                    </article>
+                     <article class="project-card">
+                        <h3>OX CyberShield</h3>
+                        <p>AI-powered cybersecurity tool with real-time dashboard.</p>
+                        <a href="#">View Code</a> <!-- UPDATE LINK -->
+                    </article>
+                     <article class="project-card">
+                        <h3>FocusFlow</h3>
+                        <p>AI study planner using YouTube API + LLM.</p>
+                        <a href="#">View Code</a> <!-- UPDATE LINK -->
+                    </article>
+                     <article class="project-card">
+                        <h3>Vehicle Speed Detection</h3>
+                        <p>YOLOv8 + Object Tracking.</p>
+                        <a href="#">View Code</a> <!-- UPDATE LINK -->
+                    </article>
+                     <article class="project-card">
+                        <h3>MQTT + Grafana</h3>
+                        <p>IoT data visualization pipeline.</p>
+                        <a href="#">View Code</a> <!-- UPDATE LINK -->
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 OMNIX Creator. Built with 💡 and ☕</p>
-  </footer>
+        <!-- Added Experience Section -->
+        <section id="experience" class="content-section">
+            <div class="container">
+                <h2>Experience</h2>
+                <!-- Kept original paragraph structure, consider using <ul> or separate <p> tags -->
+                <p>
+                    Internship at Svasti – Worked on multiple AI/ML and cybersecurity projects<br>
+                    NCC ‘C’ Certificate – Leadership, teamwork, and discipline<br>
+                    Symposium Coordinator – Led the first-ever AI & DS symposium in our college
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+             <div class="container">
+                 <h2>Get In Touch</h2>
+                 <p>Interested in working together or just want to say hi?</p>
+                 <!-- Using a list for contact links for better structure -->
+                 <ul class="contact-links-list">
+                    <li>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></li> <!-- UPDATE EMAIL -->
+                    <li>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></li> <!-- UPDATE GITHUB -->
+                    <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li> <!-- UPDATE LINKEDIN -->
+                 </ul>
+                 <!-- You might need specific CSS for .contact-links-list -->
+                 <!-- Removed the generic button as direct links are provided -->
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-bottom">
+        <div class="container">
+            <!-- Updated Footer Content -->
+            <p>© 2025 Prabu M S. Built with 💡 and ☕</p> <!-- Updated year/name, kept emojis -->
+        </div>
+    </footer>
+
 </body>
 </html>
