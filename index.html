@@ -4,23 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabu M S - AI & Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon Examples (Replace with your actual favicons) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN (Replace with your kit URL or local setup) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
     <div class="container header-container">
         <div class="logo-nav">
-            <div class="logo-placeholder">PM</div>
-            <nav class="menu">MENU</nav>
+            <!-- Replace with your actual logo (text or img) -->
+            <a href="#" class="logo">PM</a>
+            <button id="menu-button" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i> <span class="menu-text">MENU</span>
+            </button>
+            <nav id="main-nav" class="main-navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="hire-me">
-            <div class="icon-placeholder">📩</div>
-            <span><a href="mailto:msprabu12345@gmail.com">HIRE ME</a></span>
+            <a href="mailto:msprabu12345@gmail.com">
+                <i class="fas fa-paper-plane icon-hire"></i>
+                <span>HIRE ME</span>
+            </a>
         </div>
     </div>
 </header>
@@ -34,17 +59,106 @@
                     I'm an <span class="highlight">AI & Web Developer</span> passionate about crafting intelligent systems and modern web solutions. Based in Tamil Nadu, India.
                 </p>
             </div>
-            <div class="hero-illustration">
-                <div class="illustration-placeholder">Illustration Placeholder</div>
-            </div>
+            <div class="hero-illustration" id="hero-svg-container">
+              <!-- SVG is embedded directly here -->
+            <!-- SVG is embedded directly here - CORRECTED COLORS -->
+            <svg id="neural-blueprint-svg" width="100%" viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                  <!-- Define multiple accent colors and gradients -->
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#FF6B6B; stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#FFD166; stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#06D6A0; stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#118AB2; stop-opacity:1" />
+                  </linearGradient>
+                   <linearGradient id="grad3" x1="100%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style="stop-color:#6c63ff; stop-opacity:1" /> <!-- Original Accent -->
+                      <stop offset="100%" style="stop-color:#EE82EE; stop-opacity:1" /> <!-- Violet -->
+                  </linearGradient>
+
+                  <!-- Glow Filter -->
+                  <filter id="interactive-glow" x="-70%" y="-70%" width="240%" height="240%">
+                      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                      <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                  </filter>
+              </defs>
+
+              <!-- Background - Use direct fill -->
+              <rect width="500" height="380" fill="#111827"/>
+
+              <!-- Blueprint Grid (More subtle) - Use direct stroke -->
+              <g id="blueprint-grid" stroke="#4B5563" stroke-width="0.3" opacity="0.2">
+                   {/* <!-- Vertical & Horizontal Lines remain the same --> */}
+                  <line x1="50" y1="0" x2="50" y2="380" /> <line x1="100" y1="0" x2="100" y2="380" /> <line x1="150" y1="0" x2="150" y2="380" /> <line x1="200" y1="0" x2="200" y2="380" /> <line x1="250" y1="0" x2="250" y2="380" /> <line x1="300" y1="0" x2="300" y2="380" /> <line x1="350" y1="0" x2="350" y2="380" /> <line x1="400" y1="0" x2="400" y2="380" /> <line x1="450" y1="0" x2="450" y2="380" />
+                  <line x1="0" y1="50" x2="500" y2="50" /> <line x1="0" y1="100" x2="500" y2="100" /> <line x1="0" y1="150" x2="500" y2="150" /> <line x1="0" y1="200" x2="500" y2="200" /> <line x1="0" y1="250" x2="500" y2="250" /> <line x1="0" y1="300" x2="500" y2="300" /> <line x1="0" y1="350" x2="500" y2="350" />
+              </g>
+
+              <!-- Blueprint Shapes (Example Rectangles) - Use direct stroke -->
+              <g id="blueprint-shapes" stroke="#4B5563" stroke-width="0.8" fill="none" opacity="0.4">
+                  <rect x="75" y="75" width="100" height="60" rx="3"/>
+                  <rect x="270" y="160" width="140" height="90" rx="3"/>
+                  <rect x="100" y="260" width="80" height="50" rx="3"/>
+                  <circle cx="350" cy="80" r="40"/>
+              </g>
+
+              <!-- Neural Network Layer - Added Classes for JS -->
+              <g id="neural-network" filter="url(#interactive-glow)">
+                  <!-- Connections (Lines with Gradients) - These are CORRECT -->
+                  <g id="neural-connections">
+                      <line class="neural-connection" x1="80" y1="100" x2="150" y2="80" stroke="url(#grad1)"/>
+                      <line class="neural-connection" x1="80" y1="100" x2="130" y2="180" stroke="url(#grad2)"/>
+                      {/* <!-- ... rest of the lines using url(#grad...) are okay --> */}
+                      <line class="neural-connection" x1="150" y1="80" x2="220" y2="140" stroke="url(#grad3)"/>
+                      <line class="neural-connection" x1="150" y1="80" x2="280" y2="100" stroke="url(#grad1)"/>
+                      <line class="neural-connection" x1="130" y1="180" x2="220" y2="140" stroke="url(#grad2)"/>
+                      <line class="neural-connection" x1="130" y1="180" x2="50" y2="200" stroke="url(#grad3)"/>
+                      <line class="neural-connection" x1="220" y1="140" x2="280" y2="100" stroke="url(#grad1)"/>
+                      <line class="neural-connection" x1="220" y1="140" x2="350" y2="180" stroke="url(#grad2)"/>
+                      <line class="neural-connection" x1="220" y1="140" x2="300" y2="240" stroke="url(#grad3)"/>
+                      <line class="neural-connection" x1="280" y1="100" x2="390" y2="60" stroke="url(#grad1)"/>
+                      <line class="neural-connection" x1="350" y1="180" x2="300" y2="240" stroke="url(#grad2)"/>
+                      <line class="neural-connection" x1="350" y1="180" x2="420" y2="290" stroke="url(#grad3)"/>
+                      <line class="neural-connection" x1="300" y1="240" x2="210" y2="280" stroke="url(#grad1)"/>
+                      <line class="neural-connection" x1="300" y1="240" x2="120" y2="260" stroke="url(#grad2)"/>
+                      <line class="neural-connection" x1="210" y1="280" x2="120" y2="260" stroke="url(#grad3)"/>
+                      <line class="neural-connection" x1="210" y1="280" x2="50" y2="200" stroke="url(#grad1)"/>
+                      <line class="neural-connection" x1="120" y1="260" x2="50" y2="200" stroke="url(#grad2)"/>
+                      <line class="neural-connection" x1="390" y1="60" x2="450" y2="130" stroke="url(#grad3)" />
+                      <line class="neural-connection" x1="420" y1="290" x2="450" y2="220" stroke="url(#grad1)" />
+                  </g>
+                  <!-- Nodes (Circles with different solid colors) - Use direct fill -->
+                  <g id="neural-nodes">
+                      <circle class="neural-node" cx="80" cy="100" r="5" fill="#FF6B6B"/>
+                      <circle class="neural-node" cx="150" cy="80" r="6" fill="#FFD166"/>
+                      <circle class="neural-node" cx="130" cy="180" r="5" fill="#06D6A0"/>
+                      <circle class="neural-node" cx="220" cy="140" r="7" fill="#118AB2"/>
+                      <circle class="neural-node" cx="280" cy="100" r="5" fill="#6c63ff"/>
+                      <circle class="neural-node" cx="350" cy="180" r="6" fill="#EE82EE"/>
+                      <circle class="neural-node" cx="300" cy="240" r="5" fill="#FF6B6B"/>
+                      <circle class="neural-node" cx="210" cy="280" r="6" fill="#FFD166"/>
+                      <circle class="neural-node" cx="120" cy="260" r="4" fill="#06D6A0"/>
+                      <circle class="neural-node" cx="420" cy="290" r="5" fill="#118AB2"/>
+                      <circle class="neural-node" cx="390" cy="60" r="5" fill="#6c63ff"/>
+                      <circle class="neural-node" cx="50" cy="200" r="6" fill="#EE82EE"/>
+                       <circle class="neural-node" cx="450" cy="130" r="5" fill="#FF6B6B" />
+                       <circle class="neural-node" cx="450" cy="220" r="6" fill="#FFD166" />
+                  </g>
+              </g>
+          </svg>
+          </div>
         </div>
     </section>
 
     <section id="about" class="content-section">
         <div class="container">
-            <h2>About Me</h2>
+            <h2><i class="fas fa-user-circle icon-heading"></i> About Me</h2>
             <p>
-                I'm Prabu M S, an AI & Data Science student with a deep passion for building intelligent tools and web apps. I’ve developed innovative projects like <strong>OMNIX</strong> (an offline AI assistant), <strong>OX CyberShield</strong> (an AI-based cybersecurity tool), and <strong>SkillSync</strong> (a full-stack learning platform). 
+                I'm Prabu M S, an AI & Data Science student with a deep passion for building intelligent tools and web apps. I’ve developed innovative projects like <strong>OMNIX</strong> (an offline AI assistant), <strong>OX CyberShield</strong> (an AI-based cybersecurity tool), and <strong>SkillSync</strong> (a full-stack learning platform).
             </p>
             <p>
                 I enjoy combining web development and AI to create impactful digital experiences. Currently exploring DevOps, Full Stack apps, and AR/VR interfaces.
@@ -52,53 +166,89 @@
         </div>
     </section>
 
-    <section id="skills" class="content-section">
+    <section id="skills" class="content-section skills-section">
         <div class="container">
-            <h2>🧠 Skills</h2>
-            <ul>
+            <h2><i class="fas fa-brain icon-heading"></i> Skills</h2>
+            <ul class="skills-list">
                 <li><strong>Languages:</strong> Python, C, Java, JavaScript, SQL</li>
                 <li><strong>AI/ML/DL:</strong> Machine Learning, Deep Learning, Generative AI</li>
-                <li><strong>Tools:</strong> FastAPI, Streamlit, Blender (basic), YOLOv8, Whisper</li>
+                <li><strong>Web Dev:</strong> HTML, CSS, JavaScript, (Mention Frameworks like React/Vue if applicable)</li>
+                <li><strong>Tools:</strong> FastAPI, Streamlit, Blender (basic), YOLOv8, Whisper, Git, Docker (basic)</li>
                 <li><strong>Cybersecurity:</strong> OX CyberShield (custom-built attack detection)</li>
+                 <li><strong>Databases:</strong> (Mention any like PostgreSQL, MongoDB)</li>
             </ul>
         </div>
     </section>
 
     <section id="projects" class="content-section">
         <div class="container">
-            <h2>🛠️ Projects</h2>
+            <h2><i class="fas fa-tools icon-heading"></i> Projects</h2>
             <div class="project-grid">
                 <article class="project-card">
+                    <img src="placeholder-project.png" alt="OMNIX Project Thumbnail" class="project-image">
                     <h3>OMNIX</h3>
                     <p>An offline J.A.R.V.I.S.-like AI assistant with speech recognition, vision, and NLP.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
                 </article>
                 <article class="project-card">
+                    <img src="placeholder-project.png" alt="SkillSync Project Thumbnail" class="project-image">
                     <h3>SkillSync</h3>
                     <p>A full-stack collaborative learning platform with real-time features and role-based access.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                        {/* <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a> */}
+                    </div>
                 </article>
                 <article class="project-card">
+                     <img src="placeholder-project.png" alt="OX CyberShield Project Thumbnail" class="project-image">
                     <h3>OX CyberShield</h3>
                     <p>Cybersecurity dashboard that detects and responds to threats using AI/ML/DL.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </article>
+                 <article class="project-card">
+                     <img src="placeholder-project.png" alt="FocusFlow Project Thumbnail" class="project-image">
+                     <h3>FocusFlow</h3>
+                     <p>AI-powered study planner using LLM + YouTube API for focused learning.</p>
+                     <div class="project-links">
+                         <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                     </div>
+                 </article>
                 <article class="project-card">
-                    <h3>FocusFlow</h3>
-                    <p>AI-powered study planner using LLM + YouTube API for focused learning.</p>
-                </article>
-                <article class="project-card">
+                    <img src="placeholder-project.png" alt="Vehicle Speed Detection Project Thumbnail" class="project-image">
                     <h3>Vehicle Speed Detection</h3>
                     <p>Traffic analysis tool using YOLOv8 and object tracking.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </article>
                 <article class="project-card">
+                    <img src="placeholder-project.png" alt="MQTT + Grafana Project Thumbnail" class="project-image">
                     <h3>MQTT + Grafana</h3>
                     <p>IoT data pipeline using MQTT protocol with Grafana visualization.</p>
+                     <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </article>
-                <article class="project-card">
+                 <article class="project-card">
+                    <img src="placeholder-project.png" alt="Blender 3D Name Model Project Thumbnail" class="project-image">
                     <h3>Blender 3D Name Model</h3>
                     <p>First AR/VR experiment using Blender to model a 3D version of my name.</p>
+                    <div class="project-links">
+                        {/* Add relevant links if available */}
+                    </div>
                 </article>
                 <article class="project-card">
+                    <img src="placeholder-project.png" alt="Personal Portfolio Project Thumbnail" class="project-image">
                     <h3>Personal Portfolio</h3>
-                    <p>Built using React, Tailwind CSS, and Framer Motion to showcase my skills and work.</p>
+                    <p>This website! Built to showcase my skills and work.</p>
+                     <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -106,30 +256,54 @@
 
     <section id="certifications" class="content-section">
         <div class="container">
-            <h2>🧾 Certifications & Experience</h2>
-            <ul>
+            <h2><i class="fas fa-certificate icon-heading"></i> Certifications & Experience</h2>
+            <ul class="certifications-list">
                 <li><strong>NCC ‘B’ Certificate:</strong> Leadership, discipline, and soft skills training</li>
                 <li><strong>Internship at Svasti:</strong> Practical experience on real-world projects</li>
                 <li><strong>Symposium Coordinator:</strong> Led tech events in AI & DS department</li>
                 <li><strong>Generative AI Workshops:</strong> Actively learning and applying LLMs on Kaggle and beyond</li>
+                 <li>(Add links to certificates if possible)</li>
             </ul>
         </div>
     </section>
 
-    <section id="contact" class="content-section">
+    <section id="contact" class="content-section contact-section">
         <div class="container">
-            <h2>📬 Get In Touch</h2>
-            <p>Want to collaborate or discuss a project idea? Feel free to reach out!</p>
-            <a href="mailto:msprabu12345@gmail.com" class="contact-button">Send Email</a>
+            <h2><i class="fas fa-envelope icon-heading"></i> Get In Touch</h2>
+            <p>Interested in collaborating, have a question, or just want to connect? <br>Feel free to reach out!</p>
+            <a href="mailto:msprabu12345@gmail.com" class="contact-button">
+                <i class="fas fa-paper-plane"></i> Send Email
+            </a>
+             <!-- Optional: Add links to LinkedIn, GitHub etc. -->
+                         <!-- Social and Profile Links -->
+                         <div class="social-links">
+                          <a href="https://leetcode.com/u/PrabuMS07/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile" title="LeetCode">
+                              <i class="fas fa-code"></i> <!-- Using generic code icon for LeetCode -->
+                          </a>
+                          <a href="https://github.com/PrabuMS07" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub">
+                              <i class="fab fa-github"></i>
+                          </a>
+                          <a href="https://www.hackerrank.com/profile/msprabu12345" target="_blank" rel="noopener noreferrer" aria-label="HackerRank Profile" title="HackerRank">
+                              <i class="fab fa-hackerrank"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/prabu-m-1a0195265/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://www.geeksforgeeks.org/user/msprabuvahr/" target="_blank" rel="noopener noreferrer" aria-label="GeeksforGeeks Profile" title="GeeksforGeeks">
+                              <i class="fas fa-leaf"></i> <!-- Using leaf icon for GeeksforGeeks (alternative: fa-code) -->
+                          </a>
+                      </div>
         </div>
     </section>
 </main>
 
 <footer class="site-footer-bottom">
     <div class="container">
-        <p>© 2025 Prabu M S</p>
+        <p>© <span id="current-year"></span> Prabu M S. All rights reserved.</p>
     </div>
 </footer>
 
+<!-- Link JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>

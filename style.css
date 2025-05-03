@@ -1,263 +1,599 @@
-/* Basic Reset & Root Variables */
+/* --- Basic Reset & Root Variables --- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --bg-color: #ffffff; /* White background */
-    --text-color: #333333; /* Dark grey text */
-    --heading-color: #1a2a4d; /* Dark blue/purple for headings */
-    --accent-color-primary: #6c63ff; /* Example Purple Accent */
-    --accent-color-secondary: #7aa1ff; /* Example Light Blue Accent */
+  }
+  
+  :root {
+    --bg-color: #ffffff;
+    --bg-light-accent: #f4f7fc; /* Light blueish background for sections */
+    --text-color: #333333;
+    --heading-color: #1a2a4d;
+    --accent-color-primary: #6c63ff; /* Purple */
+    --accent-color-primary-darker: #5a52e0;
+    --accent-color-secondary: #7aa1ff; /* Light Blue */
     --border-light: #e0e0e0;
-    --font-sans: 'Inter', system-ui, sans-serif;
-    --font-serif: 'Playfair Display', serif; /* Example Serif */
-}
-
-html {
+    --card-bg: #fdfdfd; /* Slightly off-white cards */
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 10px 20px rgba(0, 0, 0, 0.1);
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-serif: 'Playfair Display', serif;
+  }
+  
+  html {
     scroll-behavior: smooth;
-    font-size: 100%;
-}
-
-body {
+    font-size: 100%; /* 16px */
+  }
+  
+  body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-sans);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    max-width: 1100px; /* Adjust max width as needed */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  .container {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 25px; /* Slightly more padding */
     width: 100%;
-}
-
-/* --- Header --- */
-.site-header {
-    padding: 20px 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  a {
+    color: var(--accent-color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  a:hover {
+    color: var(--accent-color-primary-darker);
+  }
+  
+  /* --- Header --- */
+  .site-header {
+    padding: 15px 0;
     border-bottom: 1px solid var(--border-light);
-}
-
-.header-container {
+    background-color: var(--bg-color); /* Ensure bg for potential sticky header */
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-light);
+  }
+  
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo-nav {
+  }
+  
+  .logo-nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between logo and menu */
-}
-
-.logo-placeholder { /* Style the logo placeholder */
-    width: 40px;
-    height: 40px;
-    background-color: var(--accent-color-secondary);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    border-radius: 4px; /* Optional */
-    /* Add triangle shape if desired using borders or SVG background */
-}
-
-.menu {
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
+    gap: 25px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: 1px solid var(--text-color);
+    padding: 8px 12px;
+    font-size: 1rem;
     cursor: pointer;
-}
-
-.hire-me {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    color: var(--text-color);
+    border-radius: 4px;
+    line-height: 1; /* Ensure icon aligns well */
+  }
+  .menu-toggle .menu-text {
+    margin-left: 8px;
+    font-size: 0.8rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.icon-placeholder { /* Style the icon placeholder */
-    width: 25px;
-    height: 25px;
-    border: 2px solid var(--accent-color-primary);
-    border-radius: 50%; /* Make it circular */
-    /* Add chat bubble shape if desired */
-}
-
-/* --- Hero Section --- */
-.hero {
-    padding: 6rem 0; /* Adjust padding */
-    overflow: hidden; /* Prevent illustration overflow issues */
-}
-
-.hero-container {
+    letter-spacing: 0.5px;
+  }
+  
+  .main-navigation ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 40px; /* Space between text and illustration */
-}
-
-.hero-text {
-    flex: 1; /* Take up available space */
-    max-width: 50%; /* Limit text width */
-}
-
-.hero-text h1 {
-    font-family: var(--font-sans); /* Use sans-serif for "Hi, my name is" */
-    font-size: clamp(2.5rem, 6vw, 4rem); /* Responsive font size */
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    color: var(--heading-color);
-    font-weight: normal; /* Lighter weight for the intro part */
-}
-
-.hero-text h1 .name {
-    font-family: var(--font-serif); /* Serif font for the name */
-    font-weight: 700; /* Bold */
-    color: var(--heading-color); /* Ensure name color is consistent */
-}
-
-.hero-text .subtitle {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 450px; /* Limit subtitle width */
-}
-
-.hero-text .subtitle .highlight {
-    font-weight: 700; /* Bold highlight */
-    color: var(--heading-color);
-}
-
-.hero-illustration {
-    flex: 1; /* Take up available space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px; /* Ensure placeholder has height */
-}
-
-.illustration-placeholder {
-    width: 80%; /* Adjust size */
-    max-width: 400px;
-    height: 350px; /* Adjust size */
-    background-color: #e0f0ff; /* Light blue placeholder */
-    border: 2px dashed var(--accent-color-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--accent-color-secondary);
-    font-size: 0.9rem;
-    border-radius: 8px;
-}
-
-/* --- General Content Sections --- */
-.content-section {
-    padding: 4rem 0;
-}
-
-.content-section h2 {
-    font-size: 2rem;
-    color: var(--heading-color);
-    margin-bottom: 2rem;
-    text-align: center; /* Or left align if preferred */
-}
-
-/* --- Projects Grid --- */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    border: 1px solid var(--border-light);
-    padding: 25px;
-    border-radius: 5px;
-    background-color: #f9f9f9; /* Slightly off-white cards */
-}
-
-.project-card h3 {
-    font-size: 1.3rem;
-    color: var(--heading-color);
-    margin-bottom: 0.75rem;
-}
-
-.project-card p {
+    gap: 25px; /* Space between nav items */
+  }
+  
+  .main-navigation a {
+    color: var(--text-color);
+    font-weight: bold;
     font-size: 0.95rem;
+    padding: 5px 0; /* Add padding for better hover area */
+    position: relative; /* For underline effect */
+  }
+  .main-navigation a::after { /* Underline hover effect */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--accent-color-primary);
+    transition: width 0.3s ease;
+  }
+  .main-navigation a:hover::after {
+    width: 100%;
+  }
+  .main-navigation a:hover {
+    color: var(--accent-color-primary); /* Keep text color change */
+  }
+  
+  .hire-me a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    color: var(--accent-color-primary);
+    border: 2px solid var(--accent-color-primary);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .hire-me a:hover {
+    background-color: var(--accent-color-primary);
+    color: white;
+  }
+  .icon-hire {
+    font-size: 1.1rem;
+  }
+  
+  
+  /* --- Hero Section --- */
+  .hero {
+    padding: 5rem 0 6rem 0; /* Adjust padding */
+    background-color: #fcfdff; /* Very light blue tint */
+    overflow: hidden;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .hero-text {
+    flex: 1;
+    max-width: 55%;
+  }
+  
+  .hero-text h1 {
+    font-family: var(--font-sans);
+    font-size: clamp(2.8rem, 7vw, 4.5rem); /* Responsive font size */
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+    font-weight: normal;
+  }
+  
+  .hero-text h1 .name {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--heading-color);
+    display: block; /* Put name on new line easily */
+  }
+  
+  .hero-text .subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 500px;
+    color: #555;
+  }
+  
+  .hero-text .subtitle .highlight {
+    font-weight: 700;
+    color: var(--accent-color-primary); /* Use accent color */
+  }
+  
+  .hero-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+  }
+  
+  .illustration-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    /* Add subtle animation if desired */
+    /* animation: float 6s ease-in-out infinite; */
+  }
+  
+  /* Example floating animation (optional) */
+  @keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-15px); }
+  100% { transform: translatey(0px); }
+  }
+  
+  
+  /* --- General Content Sections --- */
+  .content-section {
+    padding: 5rem 0;
+  }
+  .content-section:nth-child(even) { /* Alternate background colors */
+     background-color: var(--bg-light-accent);
+  }
+  
+  .content-section h2 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: var(--font-serif); /* Use serif for section titles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .icon-heading {
+    color: var(--accent-color-secondary); /* Lighter blue for icons */
+    font-size: 2rem; /* Slightly smaller than text */
+  }
+  
+  .content-section p {
+    max-width: 750px; /* Limit paragraph width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center About Me text */
+  }
+  .content-section p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  /* Specific section adjustments */
+  #about p { text-align: left; } /* Left align About Me text */
+  .skills-section ul, .certifications-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .skills-section li, .certifications-list li {
     margin-bottom: 1rem;
-}
-
-.project-card a {
+    padding-left: 25px; /* Indent list items */
+    position: relative;
+  }
+  .skills-section li::before, .certifications-list li::before {
+    content: "▹"; /* Custom bullet */
+    position: absolute;
+    left: 0;
+    color: var(--accent-color-primary);
+    font-weight: bold;
+  }
+  .skills-list strong, .certifications-list strong {
+     color: var(--heading-color);
+  }
+  
+  /* --- Projects Grid --- */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax */
+    gap: 35px;
+  }
+  
+  .project-card {
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow-light);
+    overflow: hidden; /* Ensure image corners match card radius */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, crop if needed */
+    border-bottom: 1px solid var(--border-light);
+  }
+  
+  .project-card h3 {
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    margin: 1.5rem 1.5rem 0.75rem 1.5rem; /* Add padding */
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    margin: 0 1.5rem 1.5rem 1.5rem; /* Add padding */
+    flex-grow: 1; /* Allow paragraph to take available space */
+     text-align: left; /* Override centered p */
+  }
+  
+  .project-links {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin-top: auto; /* Push links to the bottom */
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #eee; /* Separator */
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  .project-links a {
     color: var(--accent-color-primary);
     text-decoration: none;
     font-weight: bold;
-    margin-right: 10px;
-}
-.project-card a:hover {
+    font-size: 0.9rem;
+    display: inline-flex; /* Align icon and text */
+    align-items: center;
+    gap: 5px;
+  }
+  .project-links a:hover {
     text-decoration: underline;
-}
-
-/* --- Contact Section --- */
-#contact {
+    color: var(--accent-color-primary-darker);
+  }
+  .project-links a i { /* Style icons in links */
+    font-size: 1.1rem;
+  }
+  
+  /* --- Contact Section --- */
+  .contact-section {
     text-align: center;
-    background-color: #f4f7fc; /* Light blueish background */
-}
-
-.contact-button {
-    display: inline-block;
+    background-color: var(--bg-light-accent); /* Use light accent bg */
+  }
+  
+  .contact-button {
+    display: inline-flex; /* Use flex for icon alignment */
+    align-items: center;
+    gap: 10px;
     background-color: var(--accent-color-primary);
     color: white;
-    padding: 12px 25px;
+    padding: 14px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-    background-color: #5a52e0; /* Darker purple */
-}
-
-
-/* --- Footer --- */
-.site-footer-bottom {
-    padding: 2rem 0;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+  }
+  .contact-button:hover {
+    background-color: var(--accent-color-primary-darker);
+    transform: translateY(-3px);
+    color: white; /* Ensure text remains white */
+  }
+  .contact-button i {
+    font-size: 1.1rem;
+  }
+  
+  .social-links {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .social-links a {
+    font-size: 1.8rem; /* Larger icons */
+    color: var(--heading-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .social-links a:hover {
+    color: var(--accent-color-primary);
+    transform: scale(1.1);
+  }
+  
+  /* --- Footer --- */
+  .site-footer-bottom {
+    padding: 2.5rem 0;
     text-align: center;
     font-size: 0.9rem;
     color: #777;
     border-top: 1px solid var(--border-light);
-    margin-top: 3rem;
-}
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column; /* Stack text and illustration */
+    margin-top: 0; /* Remove margin as last section has padding */
+    background-color: #f9f9f9; /* Slight background differentiation */
+  }
+  
+  
+  /* --- Responsive Adjustments --- */
+  @media (max-width: 992px) {
+    .hero-text h1 {
+        font-size: clamp(2.5rem, 6vw, 3.8rem);
+    }
+    .hero-text .subtitle {
+        font-size: 1.15rem;
+    }
+     .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-container {
+        position: relative; /* Needed for absolute positioning of nav */
+    }
+    .menu-toggle {
+        display: inline-flex; /* Show button */
+        align-items: center;
+        order: 2; /* Move button to the right */
+        margin-left: auto; /* Push it right */
+    }
+    .main-navigation {
+        display: none; /* Hide nav links */
+        position: absolute;
+        top: 100%; /* Position below header */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        border-top: 1px solid var(--border-light);
+        padding: 10px 0;
+    }
+    .main-navigation.nav-open { /* Show when active */
+        display: block;
+    }
+    .main-navigation ul {
+        flex-direction: column;
+        gap: 0; /* Remove gap for vertical list */
+        align-items: center; /* Center links */
+    }
+    .main-navigation li {
+        width: 100%;
         text-align: center;
+    }
+    .main-navigation a {
+        display: block; /* Make links full width */
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
+     .main-navigation a::after { /* Hide underline effect on mobile */
+        display: none;
+    }
+    .main-navigation li:last-child a {
+        border-bottom: none;
+    }
+     .logo-nav {
+         gap: 15px; /* Reduce gap */
+         order: 1; /* Ensure logo comes first */
+     }
+     .hire-me {
+        order: 3; /* Hire me button after toggle */
+        margin-left: 15px;
+     }
+     /* Optionally hide HIRE ME text on very small screens */
+     .hire-me span {
+         /* display: none; */ /* Uncomment to hide text */
+     }
+     .hire-me a {
+         padding: 6px 10px; /* Smaller button */
+     }
+  
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
     .hero-text {
         max-width: 100%;
-        margin-bottom: 2rem;
+        order: 2; /* Text below illustration */
+    }
+    .hero-illustration {
+        max-width: 70%; /* Adjust illustration size */
+        order: 1; /* Illustration above text */
+        margin-top: 1rem;
     }
      .hero-text .subtitle {
-         margin-left: auto;
-         margin-right: auto;
+         margin: 0 auto 1.5rem auto; /* Center subtitle */
      }
-     .illustration-placeholder {
-        width: 70%;
-        height: 250px;
-     }
-    .header-container {
-        /* Adjust header layout if needed for mobile */
+  
+    .content-section h2 {
+        font-size: 2rem;
+        gap: 10px;
     }
-}
+     .icon-heading {
+        font-size: 1.6rem;
+    }
+    #about p {
+        text-align: center; /* Center about text on mobile too */
+    }
+  }
+  
+  @media (max-width: 480px) {
+     .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    .hero-text .subtitle {
+        font-size: 1.05rem;
+    }
+     .hire-me span {
+         display: none; /* Hide hire me text on small screens */
+     }
+     .hire-me a {
+         padding: 8px 10px; /* Adjust padding for icon only */
+     }
+    .menu-toggle .menu-text {
+        display: none; /* Hide MENU text */
+    }
+     .menu-toggle {
+        padding: 8px 10px;
+     }
+     .project-grid {
+        grid-template-columns: 1fr; /* Stack projects */
+        gap: 20px;
+    }
+     .social-links a {
+        font-size: 1.6rem;
+    }
+  }
+  
+  /* --- Styles for Interactive Neural Blueprint --- */
+  
+  /* Container for the SVG in the hero section */
+  .hero-illustration {
+    /* Ensure it takes up space if needed, adjust alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Remove placeholder styles if any were added */
+    min-height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 100%; /* Let SVG control aspect ratio */
+     max-width: 500px; /* Max width of SVG container */
+     margin: 0 auto; /* Center it in its flex container */
+  }
+  
+  #neural-blueprint-svg {
+    display: block; /* Remove extra space below SVG */
+    width: 100%;
+    height: auto;
+    cursor: crosshair; /* Indicate interactivity */
+    overflow: visible; /* Important for glow filter */
+  }
+  
+  /* Base styles for network elements */
+  .neural-node {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transform-origin: center center; /* Scale from center */
+    opacity: 0.7; /* Start slightly transparent */
+  }
+  
+  .neural-connection {
+    stroke-width: 1.5; /* Slightly thicker lines */
+    stroke-linecap: round;
+    transition: stroke-opacity 0.3s ease-out;
+    stroke-opacity: 0.6; /* Start slightly transparent */
+  }
+  
+  /* Styles applied by JS on hover/proximity */
+  .neural-node.is-active {
+    transform: scale(1.5); /* Enlarge node */
+    opacity: 1; /* Fully opaque */
+  }
+  
+  .neural-connection.is-active {
+    stroke-opacity: 1; /* Fully opaque */
+    /* Optional: Thicker stroke? */
+    /* stroke-width: 2.5; */
+  }
