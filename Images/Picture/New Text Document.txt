@@ -1,0 +1,319 @@
+
+            <!-- ### works (Mapped to Projects)
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Projects <!-- Updated Heading -->
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of the projects I've built, showcasing my skills in AI and Web Development. <!-- Updated Intro Text -->
+                        </p>
+
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            
+
+                            <!-- AI Data Preprocessing and Visualization Automation -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-01">
+        <div class="folio-list__item-pic">
+            <img src="Images/Data_Preprocessing.png"
+                 srcset="Images/Data_Preprocessing.png" alt="AI Data Preprocessing Project Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                Data Science
+            </div>
+            <div class="folio-list__item-title">
+                AI Data Preprocessing
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="https://github.com/PrabuMS07/AI-Data-Cleaner-Visualizer-Streamlit-App" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end AI Data Preprocessing -->
+
+
+
+<!-- Omnix AI Assistant -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-02">
+        <div class="folio-list__item-pic">
+            <img src="Images/Omnix.png"
+                 srcset="Images/Omnix.png" alt="Omnix AI Assistant Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                AI Assistant
+            </div>
+            <div class="folio-list__item-title">
+                Omnix AI Assistant
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="0" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end Omnix AI -->
+
+
+<!-- LearnSync -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-03">
+        <div class="folio-list__item-pic">
+            <img src="Images/study planner.png"
+                 srcset="Images/study planner.png" alt="LearnSync Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                Full Stack
+            </div>
+            <div class="folio-list__item-title">
+                LearnSync
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="https://github.com/PrabuMS07/LearnSync" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end LearnSync -->
+
+
+
+<!-- Solar Power Prediction -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-04">
+        <div class="folio-list__item-pic">
+            <img src="Images/solar.jpg"
+                 srcset="Images/solar.jpg" alt="Solar Power Prediction Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                Machine Learning
+            </div>
+            <div class="folio-list__item-title">
+                Solar Power Prediction
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="https://github.com/PrabuMS07/SOLAR-POWER-PREDICTION" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end Solar Power Prediction -->
+
+
+<!-- ResumeRefiner -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-06">
+        <div class="folio-list__item-pic">
+            <img src="Images/resume .png"
+                 srcset="Images/resume .png" alt="ResumeRefiner Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                Generative AI
+            </div>
+            <div class="folio-list__item-title">
+                ResumeRefiner
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="https://github.com/PrabuMS07/ResumeRefiner-AI" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end ResumeRefiner -->
+
+
+
+<!-- MQTT Data Logger -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-07">
+        <div class="folio-list__item-pic">
+            <img src="Images/mqtt.png"
+                 srcset="Images/mqtt.png" alt="MQTT Data Logger Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                IoT + Visualization
+            </div>
+            <div class="folio-list__item-title">
+                MQTT Data Logger
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="https://github.com/PrabuMS07/Real-Time-Sensor-Data-Logging-with-MQTT-and-MySQL" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end MQTT Data Logger -->
+
+
+
+<!-- Python Mini Projects -->
+<li class="folio-list__item column" data-animate-el>
+    <a class="folio-list__item-link" href="#modal-08">
+        <div class="folio-list__item-pic">
+            <img src="Images/python.png"
+                 srcset="Images/python.png" alt="Python Mini Projects Thumbnail">
+        </div>
+        <div class="folio-list__item-text">
+            <div class="folio-list__item-cat">
+                Python
+            </div>
+            <div class="folio-list__item-title">
+                Python Mini Projects
+            </div>
+        </div>
+    </a>
+    <a class="folio-list__proj-link" href="https://github.com/PrabuMS07/Python-Mini-Projects" target="_blank" title="project link">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </a>
+</li> <!--end Python Mini Projects -->
+
+
+
+                             
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+
+
+                    <!-- Modal Popups - Updated for your projects -->
+                    <!-- -------------------------------------------- -->
+                    <!-- Modal 01: OMNIX -->
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                             <!-- REPLACE with larger OMNIX placeholder/actual image -->
+                            <img src="Images/Omnix.png" alt="OMNIX Project Detail">
+                            <div class="modal-popup__desc">
+                                <h5>OMNIX</h5>
+                                <p>An offline J.A.R.V.I.S.-like AI assistant with speech recognition, computer vision capabilities, and Natural Language Processing (NLP).</p>
+                                <ul class="modal-popup__cat">
+                                    <li>AI Assistant</li>
+                                    <li>Python</li>
+                                    <li>Speech Recognition</li>
+                                    <li>NLP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- end modal 01 -->
+
+
+
+
+                    <!-- Modal for AI Data Preprocessing and Visualization Automation -->
+<div id="modal-01" hidden>
+    <div class="modal-popup">
+        <img src="Images/Data_Preprocessing.png" alt="AI Data Preprocessing and Visualization">
+        <div class="modal-popup__desc">
+            <h5>AI Data Preprocessing & Visualization</h5>
+            <p>This automation tool leverages Python and AI to streamline data cleaning, transformation, and visualization with charts and reports using libraries like Pandas, Matplotlib, and Seaborn.</p>
+            <ul class="modal-popup__cat">
+                <li>Data Science</li>
+                <li>Python</li>
+                <li>Visualization</li>
+            </ul>
+        </div>
+        <a href="https://github.com/PrabuMS07/AI-Data-Cleaner-Visualizer-Streamlit-App" class="modal-popup__details" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+    </div>
+</div>
+
+<!-- Modal for LearnSync -->
+<div id="modal-03" hidden>
+    <div class="modal-popup">
+        <img src="Images/study planner.png" alt="LearnSync Platform">
+        <div class="modal-popup__desc">
+            <h5>LearnSync</h5>
+            <p>A smart collaborative learning platform built with role-based access, course tracking, real-time chat, and progress analytics. Stack includes React, FastAPI, PostgreSQL.</p>
+            <ul class="modal-popup__cat">
+                <li>Full Stack</li>
+                <li>FastAPI</li>
+                <li>React</li>
+            </ul>
+        </div>
+        <a href="https://github.com/PrabuMS07/LearnSync" class="modal-popup__details" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+    </div>
+</div>
+
+<!-- Modal for Solar Power Prediction -->
+<div id="modal-04" hidden>
+    <div class="modal-popup">
+        <img src="Images/solar.jpg" alt="Solar Power Prediction">
+        <div class="modal-popup__desc">
+            <h5>Solar Power Prediction</h5>
+            <p>Used Linear Regression and Random Forest algorithms to forecast solar energy output from past sunlight data. Implemented model comparison and MSE visualization.</p>
+            <ul class="modal-popup__cat">
+                <li>Machine Learning</li>
+                <li>Regression</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <a href="https://github.com/PrabuMS07/SOLAR-POWER-PREDICTION" class="modal-popup__details" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+    </div>
+</div>
+
+<!-- Modal for ResumeRefiner -->
+<div id="modal-05" hidden>
+    <div class="modal-popup">
+        <img src="Images/resume .png" alt="Resume Refiner AI Tool">
+        <div class="modal-popup__desc">
+            <h5>ResumeRefiner</h5>
+            <p>An AI tool to enhance resumes using NLP to match job descriptions, highlighting keywords and ATS-optimized formatting. Built with Streamlit and OpenAI API.</p>
+            <ul class="modal-popup__cat">
+                <li>AI Tools</li>
+                <li>NLP</li>
+                <li>Streamlit</li>
+            </ul>
+        </div>
+        <a href="https://github.com/PrabuMS07/ResumeRefiner-AI" class="modal-popup__details" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+    </div>
+</div>
+
+<!-- Modal for Real-Time Sensor Data Logging -->
+<div id="modal-06" hidden>
+    <div class="modal-popup">
+        <img src="Images/IoT-MQTT/sensor-logging.png" alt="Sensor Data Logging">
+        <div class="modal-popup__desc">
+            <h5>Real-Time Sensor Data Logging</h5>
+            <p>Captures real-time sensor data using MQTT protocol, stores it in a MySQL database, and visualizes metrics using Grafana. Useful in IoT and monitoring applications.</p>
+            <ul class="modal-popup__cat">
+                <li>IoT</li>
+                <li>MQTT</li>
+                <li>MySQL + Grafana</li>
+            </ul>
+        </div>
+        <a href="https://github.com/PrabuMS07/Real-Time-Sensor-Data-Logging-with-MQTT-and-MySQL" class="modal-popup__details" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+    </div>
+</div>
+
+<!-- Modal for Python Mini Projects -->
+<div id="modal-07" hidden>
+    <div class="modal-popup">
+        <img src="Images/python.png" alt="Python Mini Projects">
+        <div class="modal-popup__desc">
+            <h5>Python Mini Projects</h5>
+            <p>Includes beginner-friendly Python projects: Rock-Paper-Scissors Game, Contact Book, Titanic Survival Prediction, Iris Flower Classification, Sales Prediction, Movie Rating Prediction, Credit Card Fraud Detection, and more.</p>
+            <ul class="modal-popup__cat">
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Fun Projects</li>
+            </ul>
+        </div>
+        <a href="https://github.com/PrabuMS07/Python-Mini-Projects" class="modal-popup__details" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+    </div>
+</div>
+
+
+                </div> <!-- end works-portfolio -->
+
+                <!-- Testimonials Section Removed as per user content -->
+
+            </section> <!-- end s-works -->
+
